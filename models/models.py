@@ -2,7 +2,7 @@
 
 from odoo import models, fields
 
-class CreditPartner(models.Model):
-	_name = 'sales_mp.manufacture'
-
+class Manufactory(models.Model):
+	_name = 'sales__mp.manufactory'
+	_description = 'a model for a conference'
 	name = fields.Char(string="Title", required=True)
