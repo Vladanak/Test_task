@@ -2,18 +2,17 @@
 
 <odoo>
      <record id="manufactory_config_action" model="ir.actions.act_window">
-        <field name="name">Manufactory</field>
-         <field name="type">ir.actions.act_window</field>
-         <field name="res_model">sales__mp.manufactory</field>
-         <field name="view_mode">tree,form</field>
+        <field name="name">sales.brand.name</field>
+         <field name="model">sales.brand</field>
+         <field name="type">tree,form</field>
     </record>
 
-    <!-- <record id="module_config_action" model="ir.actions.act_window">
-        <field name="name">Module</field>
-        <field name="model">res.partner</field>
-        <field name="arch" type="xml">
-        </field>
-    </record> -->
+
+    <record id="module_config_action" model="ir.actions.act_window">
+        <field name="name">sales.model.name</field>
+         <field name="model">sales.model</field>
+         <field name="type">tree,form</field>
+    </record>
 
 
     <menuitem id="menu_sales_manufactory_config"
@@ -23,10 +22,10 @@
             sequence="8"/>
 
 
-    <!--<menuitem id="sales_module_config"
+    <menuitem id="menu_sales_module_config"
             name="Module"
             parent="sale.menu_sale_config"
             action="module_config_action"
             sequence="9"/>
-            -->
+
 </odoo>
