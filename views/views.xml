@@ -3,15 +3,17 @@
 <odoo>
      <record id="manufactory_config_action" model="ir.actions.act_window">
         <field name="name">sales.brand.name</field>
-         <field name="model">sales.brand</field>
-         <field name="type">tree,form</field>
+         <field name="res_model">sales.brand</field>
+         <field name="type">ir.actions.act_window</field>
+         <field name="view_type">form</field>
     </record>
 
 
     <record id="module_config_action" model="ir.actions.act_window">
         <field name="name">sales.model.name</field>
-         <field name="model">sales.model</field>
-         <field name="type">tree,form</field>
+         <field name="res_model">sales.model</field>
+         <field name="type">ir.actions.act_window</field>
+         <field name="view_type">form</field>
     </record>
 
 
